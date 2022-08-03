@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/72215895a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #navbar {
+  width: 80%;
+  /* border: 1px solid red; */
+  margin: auto;
+  /* background-color: aqua; */
+}
+
+#top_nav_bar_hidden {
+  display: flex;
+  justify-content: end;
+  gap: 3%;
+}
+#navbar_niche_wala {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* #navbar_niche_wala img {
+  position: absolute;
+  top: 25px;
+  margin-left: 2em;
+}  */
+#top_nav_bar_hidden div {
+  margin-bottom: 1%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#cart {
+  display: flex;
+  /* height: 3em; */
+  width: 9em;
+  background-color: #f2f2f2;
+  /* border: 1px solid blue; */
+  /* gap: 7px; */
+  padding: 0.2%;
+}
+#cart div {
+  /* border: 1px solid brown; */
+  /* height: min-content; */
+  /* margin: 7px; */
+  text-align: right;
+}
+#cart_img {
+  width: 40%;
+  /* border: 1px solid teal; */
+  display: flex;
+}
+#cart_img img {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  /* border: 1px solid aqua; */
+}
+#cart_qunt {
+  /* line-height: -10px; */
+  /* border: 1px solid lightcoral; */
+  line-height: 10px;
+  /* justify-content: baseline; */
+  text-align: center;
+}
+#search_item {
+  width: 40%;
+}
+
+#search_item input {
+  width: 100%;
+  height: 2em;
+  margin-top: -2%;
+}
+#logo {
+  /* position: absolute; */
+  /* top: -12%; */
+  margin-top: -4%;
+}
+#category_wala_part {
+  display: flex;
+  border: 1px solid gray;
+}
+.category_wala_part_first {
+  /* background-color: #84c225; */
+  /* margin-right: 2%; */
+  /* background-color: blueviolet; */
+  display: flex;
+  margin-right: 1%;
+  /* width: 25%; */
+}
+#category_wala_part > div p {
+  margin-bottom: 0%;
+  margin-top: 0%;
+  padding: 0.5em;
+}
+
+/* //////////////////start dropDown/////////////////// */
+.category {
+  display: flex;
+}
+.category-hover-div {
+  display: flex;
+  /* min-width: 1000px; */
+  width: 70%;
+  position: absolute;
+  height: 420px;
+  background: #fff;
+  /* box-sizing: border-box; */
+  border-radius: 0px 0px 4px 4px;
+
+  visibility: hidden;
+
+  /* overflow: hidden; */
+}
+.category p {
+  background-color: #84c225;
+}
+.category:hover .category-hover-div {
+  margin-top: 2.6%;
+  visibility: visible;
+  opacity: 1;
+  box-shadow: 3px 2px 2px 2px black;
+}
+.category-hover-div-left {
+  width: 20%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.category-hover-div-left-options {
+  width: 100%;
+  height: auto;
+  /* line-height: 60px;
+   */
+  padding: 5%;
+  border-bottom: 1px solid #e4e4e4;
+
+  font-size: 14px;
+  display: flex;
+  color: #555;
+  cursor: pointer;
+  /* padding-right: 25px; */
+  position: relative;
+}
+.category-hover-div-left-options:hover {
+  color: #000;
+}
+
+.category-hover-div-right {
+  width: 70%;
+  height: auto;
+  display: flex;
+  padding-left: 45px;
+  overflow: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #eaeaea;
+  z-index: 1;
+}
+.category-hover-div-right a {
+  width: 25%;
+  /* height: auto; */
+  font-size: 14px;
+  line-height: 30px;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: normal;
+}
+.category-hover-div-right a:hover {
+  background-color: white;
+}
+
+/* ////////////navbar done//////// */
+
+/* image sliding  start */
+
+#show1 img {
+  width: 100%;
+}
+
+#image_slider_under_image {
+  width: 80%;
+  /* border: 1px solid black; */
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+#image_slider_under_image div {
+  width: 20%;
+  /* border: 1px solid red; */
+  margin-top: 2%;
+  margin-right: 2%;
+  /* text-align: justify; */
+}
+
+#image_slider_under_image image {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+/* ////////////////////////login signup////////////// */
+.open :hover {
+  color: #84c225;
+  background-color: aqua;
+}
+
+#sign-in {
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  width: 42%;
+  height: 69%;
+  margin-right: 230px !important;
+  margin-top: 130px;
+
+  box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: 0;
+}
+
+#sign-in > div {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+#top_nav_bar_hidden .navbar_signin:hover {
+  /* height: 100%;
+  width: 100%; */
+  /* background-color: red; */
+  color: #84c225;
+  cursor: pointer;
+}
+#sign-in > div:nth-of-type(2) {
+  background-color: white;
+  width: 100%;
+}
+
+.sign-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#mobile-email,
+#name {
+  border: none;
+  border-bottom: 1px solid #b3b3b3;
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 85%;
+  padding-bottom: 10px;
+}
+
+#sign-up-in ~ button {
+  margin-top: 250px;
+  margin-left: 37px;
+
+  border: none;
+  color: white;
+  background-color: #27bbb8;
+  font-weight: 700;
+  width: 85%;
+  height: 40px;
+}
+#showname {
+  color: #84c225;
+}
+
+      /* anuj part */
+      #container {
+        display: grid;
+        grid-template-columns: 1fr 0.1fr 1.2fr 1.2fr;
+        grid-template-rows: (1, 500px);
+        width: 80%;
+
+        justify-content: center;
+        margin: auto;
+        height: 600px;
+      }
+      #secondcontainer {
+        width: 80%;
+        margin: auto;
+      }
+      #second {
+        height: 400px;
+        width: 100%;
+      }
+      #third > div {
+        display: flex;
+        gap: 10px;
+      }
+      s {
+        margin-top: 23px;
+      }
+      #third > div ~ div {
+        display: flex;
+        width: 100%;
+        height: 40px;
+      }
+      #smallbox {
+        height: 34px;
+        width: 34px;
+      }
+      button {
+        width: 200px;
+        height: 100%;
+      }
+      #save {
+        width: 100px;
+        height: 100%;
+      }
+      input {
+        text-align: center;
+      }
+      #truck {
+        height: 1.6rem;
+        width: 2.4rem;
+        margin-top: 10px;
+      }
+      #truck ~ p {
+        margin-left: 10px;
+      }
+      #first > a {
+        margin-left: 20px;
+      }
+      #smallpicture {
+        display: flex;
+        height: 50px;
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+      }
+      #smallpicture > div {
+        height: 40px;
+        width: 40px;
+        margin-left: 20px;
+        border: 1px solid blue;
+      }
+      #smallpicture > div > img {
+        width: 100%;
+        height: 100%;
+      }
+      #upper {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      #icon {
+        display: flex;
+        margin-right: 10%;
+      }
+      #icon > i {
+        margin-top: 14px;
+        margin-left: 10px;
+      }
+      #upper > p {
+        font-size: x-small;
+        margin-left: 10%;
+       
+      }
+      span {
+        -bottom: 2px solid #84c225;
+        color: rgba(34, 34, 34, 0.87);
+        display: inline-block;
+        padding-bottom: 2px;
+        font-size: 1.6rem;
+        font-family: ProximaNova-Semibold;
+      }
+      a{
+          color: grey;
+      }
+      a:link {
+        
+        text-decoration: none;
+      }
+      a:hover {
+        color: darkgreen;
+      }
+      #save{
+          background-color: white;
+          cursor: pointer;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        font-weight: 0;
+      }
+      #addtocart {
+        background-color: rgb(132, 194, 37);
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        border: none;
+      }
+      ul {
+        color: grey;
+      }
+      #veg{
+          height: 20px;
+          width: 20px;
+      }
+      
+      .parent1 {
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+margin-bottom: 2%;
+
+}
+.parent1 > .child{
+  display: grid;
+  /* border: 1px solid blue; */
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: inline-table;
+
+ 
+
+}
+.parent2 {
+    height: 300px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+
+}
+.parent2 > .child2{
+  display: grid;
+  /* border: 1px solid blue; */
+  height: 100%;
+  width: 95%;
+  margin: auto;
+   }
+    </style>
+  </head>
+  <body>
+    <header id="navbar">
+      <div id="top_nav_bar_hidden">
+       <div>1860 123 1000</div>
+            <div>Southcity Apts,L&t South City, bangalore</div>   
+            <!-- //////////////// -->
+
+              <!-- <div class="navbar_signin" onclick="signin()">Sign In</div>
+                          <span id="showname"></span>
+                <!-- <div </div> -->
+             <!-- <div id="sign-in">
+                
+        <div>
+            <span onclick="closeOption()" class="sign-close">X</span>
+            <div id="sign-up-in">
+               
+            </div>
+            <input id="mobile-email" type="text" placeholder="Mobile / Email">
+                        <input id="name" type="text" placeholder="Name">
+            <button onclick="user_data()">Proceed</button>
+            
+        </div> -->
+    <!-- </div> --> 
+
+    <!-- <div id="sign-up">
+       
+        
+    </div> -->
+                <!-- /////////////login part complate///////////// -->
+      </div>
+      <div id="navbar_niche_wala">
+        <div id="logo"><img src="logoo.png" alt="" /></div>
+        <div id="search_item" style="display: flex;">
+         <div><input type="text" name="" id="" placeholder="Search for Products.." style="text-align: left; width: 300px;height: 18px;"/></div> 
+          <div style="margin-left: px;"><img src="./outline_search_white_24dp.png" alt="" style="background-color: rgb(132,194,37);"></div>
+        </div>
+        <div id="cart">
+          <div id="cart_img">
+            <img src="basket.png" alt="" />
+          </div>
+          <div id="cart_qunt">
+            <samp> My Basket</samp>
+            <p>0 Item</p>
+          </div>
+        </div>
+      </div>
+      <div id="category_wala_part">
+        <div class="category_wala_part_first">
+
+      <!-- ///////////////dropdown//////// -->
+      <div
+        class="category"
+      >
+        <p>SHOP BY CATEGORY</p>
+
+        <!-- <span>Categories</span> -->
+        <!-- <div class="category-arrow"></div> -->
+        <div class="category-hover-div">
+          <div class="category-hover-div-left">
+            <div class="category-hover-div-left-options">
+              Fruits & Vegetables
+            </div>
+            <div class="category-hover-div-left-options">
+              Foodgrains, Oil & Masala
+            </div>
+            <div class="category-hover-div-left-options">
+              Bakery Cakes & Dairy
+            </div>
+            <div class="category-hover-div-left-options">Beverages</div>
+            <div class="category-hover-div-left-options">
+              Snacks & Branded Foods
+            </div>
+            <div class="category-hover-div-left-options">Beauty & Hygiene</div>
+            <div class="category-hover-div-left-options">
+              Cleaning & Household
+            </div>
+            <div class="category-hover-div-left-options">
+              Kichen, Garden 7 Pets
+            </div>
+            <div class="category-hover-div-left-options">
+              Eggs , Meats & Fish
+            </div>
+            <div class="category-hover-div-left-options">
+              Gourmet & orld Food
+            </div>
+            <div class="category-hover-div-left-options">Baby Care</div>
+            <div class="category-hover-div-left-options">View All</div>
+          </div>
+
+          <!-- /////////////right////////// -->
+          <div class="category-hover-div-right">
+          <a href="product.html">
+            Fresh Vegetables
+          </a>
+          <a href="">
+            Herbs & Seasonings
+          </a>
+          <a href="">
+            Fresh Fruits
+          </a>
+          <a href="">Organic Fruits & Vegetables</a>
+          <a href="">Cuts & Sprouts</a>
+          <a href="">Exotic Fruits & Veggies</a>
+          <a href="">Flower Bouquets, Bunches</a>
+      
+          </div>
+        </div>
+
+      </div>
+              <div><p>OFFERS</p></div>
+               <div><p>BB EXPRESS</p></div>
+                <div><p>BB SPECIALTY</p></div>
+       </div>
+    </header>
+    <div id="upper">
+      <p>
+        HOME&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;FRUITS &
+        VEGETABLES&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;FRESH
+        VEGETABLES&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;POTATO, ONION &
+        TOMATO&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;FRESHO ONION
+      </p>
+      <div id="icon">
+        <p style="color: #999">Share On</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="first">
+        <span>Category</span>
+        <hr />
+        <h3>Fruits and Vegetables</h3>
+        <a href="">Beans Brinjals & okra</a><br><br />
+        <a href="">Cabbage and Cauliflower</a><br><br />
+        <a href="">Leafy Vegetables</a><br><br />
+        <a href="" style="color: green; font-weight: 600"
+          >Potato onion & tomato</a
+        ><br><br />
+        <a href="">Root Vegetables</a><br><br />
+        <a href="">Beans Brinjals & okra</a><br><br />
+        <a href="">Cabbage and Cauliflower</a><br><br />
+        <a href="">Cabbage and Cauliflower</a><br><br />
+        <a href="">Leafy Vegetables</a><br><br />
+        <h3>Brands</h3>
+        <a href="">FRESHO</a><br /><br>
+        <a href="">Fresho Potato onion & tomato</a>
+      </div>
+      <div
+        style="
+          height: 200px;
+          width: 0.1px;
+          border: 0.001px solid black;
+          margin-top: 100px;
+        "
+      ></div>
+      <div id="second">
+        <img
+          src="https://www.bigbasket.com/media/uploads/p/l/10000150_19-fresho-onion.jpg"
+          alt=""
+        />
+        <img id="veg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuBuLoXseCx_GST7_JVZM9_j253Vak_iFiXw&usqp=CAU" alt="">
+        <div id="smallpicture">
+          <div>
+            <img
+              src="https://www.bigbasket.com/media/uploads/p/l/10000150_19-fresho-onion.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://www.bigbasket.com/media/uploads/p/l/10000150-2_3-fresho-onion.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://www.bigbasket.com/media/uploads/p/l/10000150-3_4-fresho-onion.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://www.bigbasket.com/media/uploads/p/l/10000150-4_1-fresho-onion.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div id="third">
+        <a href="">FRESHO</a>
+        <h3>FRESHO ONION 5 KG</h3>
+        <div>
+          <s style="color: grey">MRP Rs. 300</s>
+          <h4>Price: Rs. 191</h4>
+          <h5 style="color: red">you save 36%</h5>
+          <h6 style="color: grey">(Inclusive of all taxes)</h6>
+        </div>
+        <div>
+          <input
+            type="text"
+            id="smallbox"
+            placeholder="1"
+            style="border-radius: 5px"
+          />
+          <button id="addtocart">ADD TO BASKET</button>
+          <button id="save" style="border-radius: 5px">SAVE</button>
+        </div>
+        <div>
+          <img
+            id="truck"
+            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12'%3E%3Cg fill='%238F8F8F' fill-rule='evenodd'%3E%3Cpath d='M16.369 6.024h-2.044c-.11 0-.198-.072-.198-.161V4.97c0-.09.089-.161.198-.161h1.432a.21.21 0 01.174.083l.611.892c.074.107-.022.239-.173.239m1.358.165l-1.273-1.857a.42.42 0 00-.346-.165H13.73c-.219 0-.397.144-.397.321v1.857c0 .178.178.322.397.322h3.65c.303 0 .494-.264.347-.478'/%3E%3Cpath d='M18.8 9.11c0 .097-.086.175-.19.175h-.71a.189.189 0 01-.183-.13c-.251-.817-1.07-1.418-2.039-1.418-.968 0-1.787.6-2.038 1.418a.189.189 0 01-.183.13h-.937c-.104 0-.189-.078-.189-.174V3.189c0-.096.085-.174.19-.174h3.98c.068 0 .13.034.164.088l2.11 3.451a.163.163 0 01.024.085v2.472zm-3.122 1.826c-.752 0-1.361-.56-1.361-1.251 0-.692.61-1.252 1.361-1.252.753 0 1.362.56 1.362 1.252 0 .69-.61 1.251-1.362 1.251zm-4.18-1.825c0 .096-.084.174-.188.174H5.52a.19.19 0 01-.182-.127c-.263-.8-1.072-1.386-2.028-1.386s-1.766.585-2.028 1.386a.19.19 0 01-.182.127h-.08c-.104 0-.189-.078-.189-.174V.939c0-.096.085-.174.19-.174H11.31c.104 0 .189.078.189.174V9.11zM3.31 10.97c-.752 0-1.362-.56-1.362-1.252 0-.691.61-1.252 1.362-1.252.752 0 1.361.56 1.361 1.252s-.61 1.252-1.361 1.252zm16.197-4.639l-2.345-3.835a.385.385 0 00-.33-.178H12.52c-.104 0-.189-.078-.189-.174V.348c0-.192-.17-.348-.378-.348H.378C.17 0 0 .156 0 .348v9.354c0 .192.17.348.378.348h.69c.09 0 .164.056.185.135.228.85 1.063 1.482 2.057 1.482.993 0 1.828-.632 2.056-1.482a.188.188 0 01.184-.135h7.897c.087 0 .162.055.184.132.24.833 1.066 1.45 2.047 1.45.981 0 1.808-.617 2.048-1.45a.188.188 0 01.184-.132h1.267c.21 0 .379-.156.379-.348v-3.2a.326.326 0 00-.049-.17z'/%3E%3C/g%3E%3C/svg%3E"
+            alt=""
+          />
+          <p>Standard: Today 10:00PM - 11:59PM</p>
+        </div>
+      </div>
+    </div>
+    <div id="secondcontainer">
+      <h3>Fresho onion</h3>
+      <h4>About The Product</h4>
+      <ul>
+        <li>
+          Onions are known to be rich in biotin. Most of the flavonoids which
+          are known as anti-oxidants are concentrated more in the outer layers,
+          so when you peel off the layers, you should remove as little as
+          possible.
+        </li>
+        <li>
+          Onion can fill your kitchen with a thick spicy aroma. It is a common
+          base vegetable in most Indian dishes, thanks to the wonderful flavor
+          that it adds to any dish.
+        </li>
+      </ul>
+      <h4>Benifits</h4>
+      <ul>
+        <li>
+          If a piece of onion is inhaled, it can slow down or stop nose
+          bleeding.
+        </li>
+        <li>
+          Those who have sleeping disorders or insomnia can have a good night
+          sleep if they have an onion every day.
+        </li>
+      </ul>
+      <h4>Storage and Uses</h4>
+      <ul>
+        <li>Store in a cool dry place, need not refridgerate.</li>
+        <li>
+          Freezing onions, soaking them under water and keeping the root intact
+          bef ore chopping are some methods to reduce tears while chopping them.
+        </li>
+      </ul>
+      <h4>Other Product Info</h4>
+      <ul>
+        <li>EAN Code: 10000150</li>
+        <li>Country of origin: India</li>
+      </ul>
+    </div>
+    <div id="footermain" style="width: 80%; margin: auto;">
+      <div class="parent1">
+        <div class="child">
+            <h4 style="color: green;">bigbasket</h4>
+            <p>About Us</p>
+            <p>In News</p>
+            <p>Green bigbasket</p>
+            <p>Privacy Policy</p>
+            <p>Affiliate</p>
+            <p>Terms and Conditions</p>
+            <p>Careers At bigbasket</p>
+            <p>bb Instant</p>
+            <p>bb Daily</p>
+            <p>bb Blog</p>
+        
+          
+        </div>
+        <div class="child">
+            <h4 style="color: green;">Help</h4>
+            <p>FAQs</p>
+            <p>Contact Us</p>
+            <p>bb Wallet FAQs</p>
+            <p>bb Wallet T&Cs</p>
+            <p>Vendor Connect</p>
+        </div>
+        <div class="child">
+            <h4 style="color: green;">Download Our App</h4>
+            <div><img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/Google-App-store-icon.png" alt=""></div>
+            <div><img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/Apple-App-store-icon.png" alt=""></div>
+        </div>
+        <div class="child">
+            <h4 style="color: green;">Download Our App</h4>
+           <div style="display: flex;">
+            <div class="ja"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png" alt="" style="height: 42px;width: 43px; padding: 0px 5px 5px 5px; "></div>
+            <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBjAAckYjOVIIsiqhARym2rHjJ2i2JiyH4Q&usqp=CAU" alt="" style="height: 40px;width: 40px;padding: 0px 5px 5px 5px; "></div>
+            <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQstfv9_bPbqdcnazcz6VzU5PF7NggkPuG03Q&usqp=CAU" alt="" style="height: 40px;width: 40px; padding: 0px 5px 5px 5px;"></div>
+            <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRaekzA4ZW-1ZXQdwSVSlVBcTCoa6SyiAIaQ&usqp=CAU" alt="" style="height: 40px;width: 40px;padding: 0px 5px 5px 5px; "></div>
+           </div>
+        </div>
+    </div>
+    <div class="parent2">
+        <div class="child2" style="display:flex">
+            <h4 style="color: green;">POPULAR CATEGORIES:</h4>
+            <p>
+                Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks, Flakes, Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food, Diapers & Wipes,</p>
+        </div>
+        <div class="child2" style="display: flex;">
+            <h4 style="color: green;">POPULAR BRAND:</h4>
+            <p>
+  Amul, Nescafe , MTR, Red Bull, elite cake, Pediasure, Yummiez, Yera, Yakult, Britannia, Wow Momo, Fortune , Haldirams , Ferrero, Lays, Patanjali, McCain, kwality walls, Cadbury Dairy Milk, Pedigree,</p>
+        </div>
+        <div class="child2" style="display: flex;">
+            <h4 style="color: green;"> CITIES WE SERVE:</h4>
+            <p>Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Mysore, Madurai, Coimbatore, Vijayawada-Guntur, Kolkata, Ahmedabad-Gandhinagar, Nashik, Lucknow-Kanpur, Gurgaon, Vadodara, Visakhapatnam,</p>
+        </div>
+        <div class="child2" style="display: flex;">
+            <h4 style="color: green;"> PAYMENT OPTIONS:  &#160  &#160  &#160 </h4>
+            <img src="https://www.co.benton.or.us/sites/default/files/styles/full_node_primary_extra_wide/public/imageattachments/health/page/3908/logos.jpg?itok=Kz-SSNtq" alt="" style="height: 50%;width: 60%;">
+  
+        </div>
+    </div>
+    </div>
+    
+
+  </body>
+</html>
+<script >
+  
+</script>
