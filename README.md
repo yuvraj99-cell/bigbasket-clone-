@@ -2,7 +2,7 @@
 
 A web application to buy groceries online.
 
-## Run Project : http://bigbasket-clone-v2.vercel.app/
+## Run Project : https://deepak123bharat.github.io/MasaiknightsBigbasket/
 
 
 ## Team Members
