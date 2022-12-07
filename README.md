@@ -7,10 +7,10 @@ A web application to buy groceries online.
 
 ## Team Members
 
- -Rajtilak patil
+ - Rajtilak patil
  - Deepak
- -Faizan Wani
- -Yuvraj
+ - Faizan Wani
+ - Yuvraj
  
  ## Tech Stacks
 
